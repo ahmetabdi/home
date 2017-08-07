@@ -44,34 +44,13 @@
     <hr class="star-primary">
     <div class="row">
       <div class="col-sm-4 portfolio-item">
-        <div class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="images/portfolio/cabin.png" alt="">
-        </div>
+        <img class="img-fluid" src="images/clients/universal.png" alt="">
       </div>
       <div class="col-sm-4 portfolio-item">
-        <div class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="images/portfolio/cake.png" alt="">
-        </div>
+        <img class="img-fluid" src="images/clients/ffvii.jpg" alt="">
       </div>
       <div class="col-sm-4 portfolio-item">
-        <div class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
-            </div>
-          </div>
-          <img class="img-fluid" src="images/portfolio/circus.png" alt="">
-        </div>
+        <img class="img-fluid" src="images/clients/universal.png" alt="">
       </div>
       <div class="col-sm-4 portfolio-item">
         <div class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
