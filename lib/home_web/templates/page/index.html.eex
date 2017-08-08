@@ -96,12 +96,10 @@
     <hr class="star-light">
     <div class="row">
       <div class="col-lg-4 offset-lg-2 text-center">
-        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
         <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
           including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
       </div>
       <div class="col-lg-4 text-center">
-        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
         <p>Elixir is a new generation functional & concurrent programming language built on top of Erlang's VM - BEAM.</p>
         <p>It's a language designed for productivity, extensibility & maintainability, brining in best of Erlang's fault-tolerance, distributed computing & concurrency.</p>
       </div>
@@ -117,12 +115,13 @@
     <hr class="star-light">
     <div class="row">
       <div class="col-lg-4 offset-lg-2 text-center">
-        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
-          including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <%= render HomeWeb.PageView, "potion_red.html", conn: @conn %>
+        <h3 style="color: #AC1401;">Ruby</h3>
+        <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
       </div>
       <div class="col-lg-4 text-center">
-        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
+        <%= render HomeWeb.PageView, "potion_purple.html", conn: @conn %>
+        <h3 style="color: #6E41B5;">Elixir</h3>
         <p>Elixir is a new generation functional & concurrent programming language built on top of Erlang's VM - BEAM.</p>
         <p>It's a language designed for productivity, extensibility & maintainability, brining in best of Erlang's fault-tolerance, distributed computing & concurrency.</p>
       </div>
