@@ -2,10 +2,10 @@
 <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample"
     aria-expanded="false" aria-label="Toggle navigation">
-            Menu <i class="fa fa-bars"></i>
-        </button>
+      Menu <i class="fa fa-bars"></i>
+  </button>
   <div class="container">
-    <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+    <a class="navbar-brand" href="#page-top">Ahmet Abdi</a>
     <div class="collapse navbar-collapse" id="navbarExample">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -13,6 +13,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tools">Tools</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
@@ -28,11 +31,11 @@
 <!-- Header -->
 <header class="masthead">
   <div class="container">
-    <img class="img-fluid" src="images/profile.png" alt="">
+    <img class="img-fluid" src="images/user.jpg" alt="">
     <div class="intro-text">
-      <span class="name">Start Bootstrap</span>
+      <span class="name">Ahmet Abdi</span>
       <hr class="star-light">
-      <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+      <span class="skills">Ruby / Elixir Developer - Web + Mobile</span>
     </div>
   </div>
 </header>
@@ -89,21 +92,39 @@
 <!-- About Section -->
 <section class="success" id="about">
   <div class="container">
-    <h2 class="text-center">About</h2>
+    <h2 class="text-center">Speciality</h2>
     <hr class="star-light">
     <div class="row">
-      <div class="col-lg-4 offset-lg-2">
+      <div class="col-lg-4 offset-lg-2 text-center">
+        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
         <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
           including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
       </div>
-      <div class="col-lg-4">
-        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist
-          looking to share your projects, this template is the perfect starting point!</p>
+      <div class="col-lg-4 text-center">
+        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
+        <p>Elixir is a new generation functional & concurrent programming language built on top of Erlang's VM - BEAM.</p>
+        <p>It's a language designed for productivity, extensibility & maintainability, brining in best of Erlang's fault-tolerance, distributed computing & concurrency.</p>
       </div>
-      <div class="col-lg-8 offset-lg-2 text-center">
-        <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
+    </div>
+  </div>
+</section>
+
+<!-- Tools Section -->
+
+<section class="success" id="tools">
+  <div class="container">
+    <h2 class="text-center">Tools</h2>
+    <hr class="star-light">
+    <div class="row">
+      <div class="col-lg-4 offset-lg-2 text-center">
+        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
+          including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <%= render HomeWeb.PageView, "potion.html", conn: @conn %>
+        <p>Elixir is a new generation functional & concurrent programming language built on top of Erlang's VM - BEAM.</p>
+        <p>It's a language designed for productivity, extensibility & maintainability, brining in best of Erlang's fault-tolerance, distributed computing & concurrency.</p>
       </div>
     </div>
   </div>
@@ -163,33 +184,25 @@
   <div class="footer-above">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-4">
-          <h3>Location</h3>
-          <p>3481 Melrose Place
-            <br>Beverly Hills, CA 90210</p>
-        </div>
-        <div class="footer-col col-md-4">
+        <div class="footer-col col-md-6">
           <h3>Around the Web</h3>
           <ul class="list-inline">
             <li class="list-inline-item">
-              <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-facebook"></i></a>
+              <a class="btn-social btn-outline" href="https://www.github.com/ahmetabdi" target="_blank"><i class="fa fa-fw fa-github"></i></a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-google-plus"></i></a>
+              <a class="btn-social btn-outline" href="https://twitter.com/ahmet1up" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-twitter"></i></a>
+              <a class="btn-social btn-outline" href="https://uk.linkedin.com/in/ahmetabdi" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
             </li>
             <li class="list-inline-item">
-              <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-linkedin"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-social btn-outline" href="#"><i class="fa fa-fw fa-dribbble"></i></a>
+              <a class="btn-social btn-outline" href="mailto:work@ahmet.pro" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
             </li>
           </ul>
         </div>
-        <div class="footer-col col-md-4">
-          <h3>About Freelancer</h3>
+        <div class="footer-col col-md-6">
+          <h3>About Me</h3>
           <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
         </div>
       </div>
@@ -199,7 +212,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          Copyright &copy; Your Website 2017
+          Copyright &copy; Metacortex Ltd <%= DateTime.utc_now.year %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          Site built using <img src="images/languages/elixir-drop.png" style="height: 24px; opacity: 0.8" /> and <img src="images/languages/phoenix_big.svg" style="height: 24px;" />.
         </div>
       </div>
     </div>
@@ -235,16 +253,13 @@
                 146 icons for only $12!</p>
               <ul class="list-inline item-details">
                 <li>Client:
-                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                  <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
                 </li>
                 <li>Date:
-                  <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
+                  <strong><a href="http://startbootstrap.com">April 2014</a></strong>
                 </li>
                 <li>Service:
-                  <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
+                  <strong><a href="http://startbootstrap.com">Web Development</a></strong>
                 </li>
               </ul>
               <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>

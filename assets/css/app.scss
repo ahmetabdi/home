@@ -11,6 +11,77 @@
 @import "contact.scss";
 @import "bootstrap-overrides.scss";
 
+
+//Elixir
+
+// Please view in Chrome
+// Animations -----------------------
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes vaporize {
+  0% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+// Styles ------------------------
+
+.alchemist-ph {
+  .clipped {
+    clip-path: url(#clipper);
+  }
+
+  #sun {
+    animation: vaporize 1100ms infinite linear;
+  }
+
+  #star1 {
+    animation: vaporize 900ms infinite linear;
+  }
+
+  #star2 {
+    animation: vaporize 850ms infinite linear;
+  }
+
+  #star3 {
+    animation: vaporize 750ms infinite linear;
+  }
+
+  .clipped > .chem1 {
+    fill: #6E41B5;
+  }
+
+  .clipped > .chem2  {
+    fill: #A486E2;
+  }
+
+  .clipped > .chem1 {
+    animation: spin 3500ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+
+  .clipped >.chem2 {
+    animation: spin 5000ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+}
+
+//
+
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden; }
