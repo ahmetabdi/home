@@ -60,8 +60,12 @@ exports.config = {
     },
     copycat: {
       "fonts": [
-        "node_modules/font-awesome/fonts"
-      ] // copy these files into priv/static/fonts/
+        "node_modules/font-awesome/fonts",
+        "node_modules/devicon/fonts"
+      ], // copy these files into priv/static/fonts/
+      "icons": [
+        "node_modules/devicon/icons"
+      ]
     }
   },
 
