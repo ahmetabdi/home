@@ -6,7 +6,7 @@
 \____|__  /___|  /__|_|  /\___  >__|
         \/     \/      \/     \/
 
-I see you looking at my sauce, Welcome.
+I see you looking at my sauce, Welcome to the party friend.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,6 @@ I see you looking at my sauce, Welcome.
 
     <title>Hello Home!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-    <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +42,6 @@ I see you looking at my sauce, Welcome.
 
   <body class="index" id="page-top">
     <%= render @view_module, @view_template, assigns %>
-    <!-- Plugin JavaScript -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   </body>

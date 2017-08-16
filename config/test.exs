@@ -17,3 +17,6 @@ config :home, Home.Repo,
   database: "home_test",
   hostname: System.get_env("DB_HOST") || "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :platform, Home.Emails.Mailer,
+  adapter: Bamboo.TestAdapter

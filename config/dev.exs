@@ -56,3 +56,6 @@ config :home, Home.Repo,
   database: "home_dev",
   hostname: System.get_env("DB_HOST") || "localhost",
   pool_size: 10
+
+config :platform, Home.Emails.Mailer,
+  adapter: Bamboo.LocalAdapter
