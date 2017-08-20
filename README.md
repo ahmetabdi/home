@@ -13,15 +13,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ## Setup
 
-`git clone git@github.com:ahmetabdi/home.git`
-
-`cd home`
-
-`docker-compose build`
-
-`docker-compose run web mix deps.get`
-
-`docker-compose up`
+`Make setup`
 
 ## Learn more
 
