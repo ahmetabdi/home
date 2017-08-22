@@ -17,7 +17,7 @@ I see you looking at my sauce, Welcome to the party friend.
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Home!</title>
+    <title>Ahmet Abdi</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
