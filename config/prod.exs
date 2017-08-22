@@ -21,7 +21,7 @@ config :home, HomeWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-config :platform, Home.Emails.Mailer,
+config :home, Home.Emails.Mailer,
   adapter: Bamboo.SendgridAdapter,
   api_key: System.get_env("SENDGRID_API_KEY")
 
