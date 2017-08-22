@@ -17,10 +17,10 @@ defmodule HomeWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    post "/contact_form/new", ContactFormController, :new
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", HomeWeb do
-  #   pipe_through :api
-  # end
+  if Mix.env == :dev do
+    forward "/sent_emails", Bamboo.EmailPreviewPlug
+  end
 end

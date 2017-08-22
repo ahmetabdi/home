@@ -85,18 +85,23 @@ import jqBootstrapValidation from "./jqBootstrapValidation"
             var phone = $("input#phone_number").val();
             var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
+            var csrf = document.querySelector("meta[name=csrf]").content;
+
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "/contact_form/new",
                 type: "POST",
                 data: {
                     name: name,
                     phone: phone,
                     email: email,
                     message: message
+                },
+                headers: {
+                    "X-CSRF-TOKEN": csrf
                 },
                 cache: false,
                 success: function() {
@@ -121,7 +126,7 @@ import jqBootstrapValidation from "./jqBootstrapValidation"
                     $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
-                    $('#contactForm').trigger("reset");
+                    //$('#contactForm').trigger("reset");
                 },
             });
         },
@@ -137,5 +142,5 @@ import jqBootstrapValidation from "./jqBootstrapValidation"
 })(jQuery); // End of use strict
 
 $('#name').focus(function() {
-    $('#success').html('');
+  $('#success').html('');
 });

@@ -1,0 +1,19 @@
+<p>Name:</p>
+<p><%= @name %></p>
+
+<br />
+
+<p>Message:</p>
+<p><%= @message %></p>
+
+<br />
+
+<p>Email:</p>
+<p><%= @email %></p>
+
+<br />
+
+<p>Phone:</p>
+<p><%= @phone %></p>
+
+<br />
