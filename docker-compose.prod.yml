@@ -7,11 +7,12 @@ services:
     volumes:
       - .:/app
     ports:
-      - "4000:4000"
+      - "80:80"
     command: mix phx.server
     environment:
+      SENDGRID_API_KEY: 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
       DB_HOST: database
-      PORT: 4000
+      PORT: 80
     depends_on:
       - database
 
