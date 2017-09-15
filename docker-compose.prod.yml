@@ -13,6 +13,7 @@ services:
       SENDGRID_API_KEY: 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
       DB_HOST: database
       PORT: 80
+      MIX_ENV: prod
     depends_on:
       - database
 
