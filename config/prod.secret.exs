@@ -16,6 +16,6 @@ config :home, Home.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "home_prod",
+  database: "home_dev",
   hostname: System.get_env("DB_HOST") || "localhost",
   pool_size: 15
