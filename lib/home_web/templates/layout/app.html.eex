@@ -6,7 +6,7 @@
 \____|__  /___|  /__|_|  /\___  >__|
         \/     \/      \/     \/
 
-I see you looking at my sauce, Welcome to the party friend.
+I see you looking at my source, Welcome.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,11 +14,11 @@ I see you looking at my sauce, Welcome to the party friend.
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Ahmet Abdi is a Ruby & Elixir web developer in London.">
+    <meta name="author" content="Ahmet Abdi">
     <meta name="csrf" content="<%= Plug.CSRFProtection.get_csrf_token() %>">
 
-    <title>Ahmet Abdi</title>
+    <title>Ahmet Abdi | Ruby/Elixir Developer</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">

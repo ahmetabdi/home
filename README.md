@@ -13,7 +13,7 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ## Setup
 
-`Make setup`
+`make setup`
 
 ## Learn more
 

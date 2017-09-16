@@ -12,10 +12,10 @@
         <li class="nav-item">
           <a class="nav-link" href="#portfolio">Portfolio</a>
         </li>
+        -->
         <li class="nav-item">
           <a class="nav-link" href="#about">About</a>
         </li>
-        -->
         <li class="nav-item">
           <a class="nav-link" href="#tech">Tech</a>
         </li>
@@ -94,30 +94,27 @@
 -->
 
 <!-- About Section -->
-<!--
-<section class="success" id="about">
+<section id="about">
   <div class="container">
-    <h2 class="text-center">Speciality</h2>
-    <hr class="star-light">
+    <h2 class="text-center">About</h2>
+    <hr class="star-primary">
     <div class="row">
       <div class="col-lg-4 offset-lg-2 text-center">
-        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
-          including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        <p>Hardworking and productive programmer always focused on completing the task at hand working very well towards tight deadlines, I love solving problems especially complex ones as they are the most challenging and rewarding to work on.</p>
+        <p>I work very well in teams and have had to opportunity of teaching Junior and Mid-level developers in Ruby/Rails and ReactJS.</p>
       </div>
       <div class="col-lg-4 text-center">
-        <p>Elixir is a new generation functional & concurrent programming language built on top of Erlang's VM - BEAM.</p>
-        <p>It's a language designed for productivity, extensibility & maintainability, brining in best of Erlang's fault-tolerance, distributed computing & concurrency.</p>
+        <p>I have a big passion for producing very readable and understandable code by running code through linters and static code analysers like Rubocop to ensure the quality of code is to the standard of the Ruby style guide which I see as being very important to keep the code base maintainable for the future.</p>
       </div>
     </div>
   </div>
 </section>
--->
 
 <!-- Tech Section -->
-<section id="tech">
+<section class="success" id="tech">
   <div class="container">
     <h2 class="text-center">Tech</h2>
-    <hr class="star-primary">
+    <hr class="star-light">
     <div class="row">
       <div class="col-lg-4 offset-lg-2 text-center">
         <%= render HomeWeb.PageView, "potion_red.html", conn: @conn %>
@@ -139,7 +136,7 @@
     </style>
 
     <h3 class="text-center">Tools</h3>
-    <hr class="star-primary">
+    <hr class="star-light">
 
     <div class="row">
       <div class="col-lg-12 text-center devicons" style="font-size: 80px;">
@@ -362,10 +359,10 @@
 </section>
 
 <!-- Contact Section -->
-<section class="success" id="contact">
+<section id="contact">
   <div class="container">
     <h2 class="text-center">Contact Me</h2>
-    <hr class="star-light">
+    <hr class="star-primary">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <form name="sentMessage" id="contactForm" novalidate>
