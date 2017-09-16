@@ -106,7 +106,7 @@
         <p>I have a big passion for producing very readable and understandable code by running code through linters and static code analysers like Rubocop to ensure the quality of code is to the standard of the Ruby style guide which I see as being very important to keep the code base maintainable for the future.</p>
       </div>
       <div class="col-lg-8 offset-lg-2 text-center">
-        <a href="https://s3.eu-west-2.amazonaws.com/home-portfolio/cv.pdf" class="btn btn-primary btn-sm">Download CV</a>
+        <a href="https://s3.eu-west-2.amazonaws.com/home-portfolio/cv.pdf" target="_blank" class="btn btn-primary btn-lg btn-block">Download CV</a>
       </div>
     </div>
   </div>
