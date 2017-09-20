@@ -9,9 +9,8 @@ services:
     ports:
       - "4000:4000"
     command: mix phx.server
-    environment:
-      DB_HOST: database
-      PORT: 4000
+    env_file:
+      - .env
     depends_on:
       - database
 
