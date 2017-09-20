@@ -10,7 +10,7 @@ services:
       - "80:80"
     command: mix phx.server
     environment:
-      SENDGRID_API_KEY: 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
+      - SENDGRID_API_KEY
       DB_HOST: database
       PORT: 80
       MIX_ENV: prod
