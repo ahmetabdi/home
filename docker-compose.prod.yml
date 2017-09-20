@@ -9,8 +9,9 @@ services:
     ports:
       - "80:80"
     command: mix phx.server
+    env_file:
+      - .env
     environment:
-      - SENDGRID_API_KEY
       DB_HOST: database
       PORT: 80
       MIX_ENV: prod

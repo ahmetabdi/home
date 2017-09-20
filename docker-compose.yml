@@ -11,6 +11,9 @@ services:
     command: mix phx.server
     env_file:
       - .env
+    environment:
+      DB_HOST: database
+      PORT: 4000
     depends_on:
       - database
 
