@@ -8,8 +8,8 @@ defmodule Home.Emails do
     |> to("ahmetabdi@gmail.com")
     |> from("admin@ahmet.pro")
     |> subject("ahmet.pro contact form submission")
-    |> html_body("<strong>Name: #{name} -- Message: #{message} -- Phone: #{phone}</strong>")
-    |> text_body("Name: #{name} -- Message: #{message} -- Phone: #{phone}")
+    |> html_body("<strong>Name: #{name} -- Email: #{email} -- Message: #{message} -- Phone: #{phone}</strong>")
+    |> text_body("Name: #{name} Email: #{email} -- Message: #{message} -- Phone: #{phone}")
     |> Mailer.deliver_now
   end
 end
