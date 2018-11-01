@@ -1,0 +1,9 @@
+{application,home,
+             [{applications,[kernel,stdlib,elixir,logger,bamboo,cowboy,plug,
+                             plug_cowboy]},
+              {description,"home"},
+              {modules,['Elixir.Home','Elixir.Home.Emails',
+                        'Elixir.Home.Mailer','Elixir.Home.Router']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {mod,{'Elixir.Home',[]}}]}.

@@ -1,0 +1,79 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "portfolio.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";
+
+// Potion
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes vaporize {
+  0% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+}
+
+.alchemist-ph {
+  .clipped {
+    clip-path: url(#clipper);
+  }
+
+  #sun {
+    animation: vaporize 1100ms infinite linear;
+  }
+
+  #star1 {
+    animation: vaporize 900ms infinite linear;
+  }
+
+  #star2 {
+    animation: vaporize 850ms infinite linear;
+  }
+
+  #star3 {
+    animation: vaporize 750ms infinite linear;
+  }
+
+  .clipped > .chem1 {
+    fill: #6E41B5;
+  }
+
+  .clipped > .chem2  {
+    fill: #A486E2;
+  }
+
+  .clipped > .chem3  {
+    fill: #890F07;
+  }
+
+  .clipped > .chem4  {
+    fill: #C52A19;
+  }
+
+  .clipped > .chem1 {
+    animation: spin 3500ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+
+  .clipped >.chem2 {
+    animation: spin 5000ms infinite linear;
+    transform-origin: 50% 50%;
+  }
+}

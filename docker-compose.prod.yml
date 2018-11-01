@@ -8,25 +8,6 @@ services:
       - .:/app
     ports:
       - "80:80"
-    command: mix phx.server
+    command: mix run --no-halt
     env_file:
       - .env
-    environment:
-      DB_HOST: database
-      PORT: 80
-      MIX_ENV: prod
-    depends_on:
-      - database
-
-  database:
-    image: postgres:9.6.3
-    ports:
-      - "5432:5432"
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    environment:
-      POSTGRES_DB: home_dev
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-volumes:
-  pgdata:
