@@ -472,6 +472,14 @@ a:focus, a:hover, a:active {
   fill: #C52A19;
 }
 
+.alchemist-ph .clipped > .chem5 {
+  fill: #37b8cf;
+}
+
+.alchemist-ph .clipped > .chem6 {
+  fill: #75CEDE;
+}
+
 .alchemist-ph .clipped > .chem1 {
   -webkit-animation: spin 3500ms infinite linear;
   animation: spin 3500ms infinite linear;
